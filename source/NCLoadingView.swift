@@ -17,10 +17,7 @@ fileprivate let kLoadViewSize: Int = 29
 class NCLoadingView: UIView {
     ///单例
     static let sharedInstance:NCLoadingView? = NCLoadingView(frame: CGRect(x: 0, y: 0, width: kWith, height: kHeight))
-    /*??类型的表示一个协议可选属性的可选类型
-    window!经过一次解包变成了?可选型，所以可以赋给window变量
-    最后如果要使用，还最后需要做一次解包
-    */
+    ///全局常量
     static let  window:UIWindow? = UIApplication.shared.delegate?.window!
     ///成员变量
     var cornerRadius: Float? = 5.0

@@ -11,6 +11,7 @@
 		4CC2CD5EF930F964293DB930 /* Pods_NCLoadingViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B17641CA2D519E12A641311 /* Pods_NCLoadingViewUITests.framework */; };
 		5E7BEF27AA24A191CFF3F7DE /* Pods_NCLoadingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E72EA47D2FF875C9810476B /* Pods_NCLoadingView.framework */; };
 		FA2E35F01E7D4CA600A0B67B /* NCLoadingAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E35EF1E7D4CA600A0B67B /* NCLoadingAnimatedView.swift */; };
+		FA485D301E82B9F400A11F64 /* NCLoadingView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FA485D2F1E82B9F400A11F64 /* NCLoadingView.podspec */; };
 		FAF03A551E7BDD910025EFD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03A541E7BDD910025EFD5 /* AppDelegate.swift */; };
 		FAF03A571E7BDD910025EFD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03A561E7BDD910025EFD5 /* ViewController.swift */; };
 		FAF03A5A1E7BDD910025EFD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF03A581E7BDD910025EFD5 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		EA60D3D10EE7444E00A4855F /* Pods-NCLoadingViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCLoadingViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCLoadingViewUITests/Pods-NCLoadingViewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F539519DF9FA5BD6AF8A1754 /* Pods_NCLoadingViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCLoadingViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2E35EF1E7D4CA600A0B67B /* NCLoadingAnimatedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCLoadingAnimatedView.swift; sourceTree = "<group>"; };
+		FA485D2F1E82B9F400A11F64 /* NCLoadingView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NCLoadingView.podspec; sourceTree = "<group>"; };
 		FAF03A511E7BDD910025EFD5 /* NCLoadingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCLoadingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF03A541E7BDD910025EFD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF03A561E7BDD910025EFD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		FAF03A481E7BDD910025EFD5 = {
 			isa = PBXGroup;
 			children = (
+				FA485D2F1E82B9F400A11F64 /* NCLoadingView.podspec */,
 				FAF03A821E7BDDB50025EFD5 /* source */,
 				FAF03A531E7BDD910025EFD5 /* NCLoadingView */,
 				FAF03A681E7BDD910025EFD5 /* NCLoadingViewTests */,
@@ -301,6 +304,7 @@
 				FAF03A5F1E7BDD910025EFD5 /* LaunchScreen.storyboard in Resources */,
 				FAF03A5C1E7BDD910025EFD5 /* Assets.xcassets in Resources */,
 				FAF03A5A1E7BDD910025EFD5 /* Main.storyboard in Resources */,
+				FA485D301E82B9F400A11F64 /* NCLoadingView.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +565,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -604,7 +608,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
