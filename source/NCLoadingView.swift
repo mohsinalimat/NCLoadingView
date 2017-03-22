@@ -40,7 +40,7 @@ class NCLoadingView: UIView {
     }()
 
     //MARK: - init
-    override init(frame: CGRect) {
+    private override init(frame: CGRect) {
         super.init(frame: frame)
         /// 监听设置方向变化
         NotificationCenter.default.addObserver(self, selector: #selector(NCLoadingView.rotate(sender:)), name: NSNotification.Name.UIDeviceOrientationDidChange, object:nil)

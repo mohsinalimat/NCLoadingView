@@ -11,7 +11,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         NCLoadingView.show(in: self.view, with: "加载中...")
 
         // Do any additional setup after loading the view, typically from a nib.
