@@ -15,7 +15,7 @@
 # 安装
 目前只支持[cocospods](https://cocoapods.org)
 ```
-pod install NCLoadingView
+pod 'NCLoadingView', '~> 0.1.0'
 ```
 
 

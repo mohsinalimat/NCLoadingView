@@ -12,6 +12,7 @@
 		5E7BEF27AA24A191CFF3F7DE /* Pods_NCLoadingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E72EA47D2FF875C9810476B /* Pods_NCLoadingView.framework */; };
 		FA2E35F01E7D4CA600A0B67B /* NCLoadingAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E35EF1E7D4CA600A0B67B /* NCLoadingAnimatedView.swift */; };
 		FA485D301E82B9F400A11F64 /* NCLoadingView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FA485D2F1E82B9F400A11F64 /* NCLoadingView.podspec */; };
+		FAE2E3F11E842E6800F80F3A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FAE2E3F01E842E6800F80F3A /* README.md */; };
 		FAF03A551E7BDD910025EFD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03A541E7BDD910025EFD5 /* AppDelegate.swift */; };
 		FAF03A571E7BDD910025EFD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF03A561E7BDD910025EFD5 /* ViewController.swift */; };
 		FAF03A5A1E7BDD910025EFD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF03A581E7BDD910025EFD5 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		F539519DF9FA5BD6AF8A1754 /* Pods_NCLoadingViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCLoadingViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2E35EF1E7D4CA600A0B67B /* NCLoadingAnimatedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCLoadingAnimatedView.swift; sourceTree = "<group>"; };
 		FA485D2F1E82B9F400A11F64 /* NCLoadingView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NCLoadingView.podspec; sourceTree = "<group>"; };
+		FAE2E3F01E842E6800F80F3A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FAF03A511E7BDD910025EFD5 /* NCLoadingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCLoadingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF03A541E7BDD910025EFD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF03A561E7BDD910025EFD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		FAF03A481E7BDD910025EFD5 = {
 			isa = PBXGroup;
 			children = (
+				FAE2E3F01E842E6800F80F3A /* README.md */,
 				FA485D2F1E82B9F400A11F64 /* NCLoadingView.podspec */,
 				FAF03A821E7BDDB50025EFD5 /* source */,
 				FAF03A531E7BDD910025EFD5 /* NCLoadingView */,
@@ -469,6 +472,7 @@
 			files = (
 				FAF03A571E7BDD910025EFD5 /* ViewController.swift in Sources */,
 				FAF03A841E7BDE380025EFD5 /* NCLoadingView.swift in Sources */,
+				FAE2E3F11E842E6800F80F3A /* README.md in Sources */,
 				FAF03A551E7BDD910025EFD5 /* AppDelegate.swift in Sources */,
 				FA2E35F01E7D4CA600A0B67B /* NCLoadingAnimatedView.swift in Sources */,
 			);

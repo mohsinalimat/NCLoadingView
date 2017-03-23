@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.authors = { 'NAICAI LI' => 'linaicai2012@gmail.com' }
   s.social_media_url = 'http://twitter.com/LINAICAI'
   s.source = { :git => 'https://github.com/NCLoadingView/NCLoadingView.git', :tag => '0.1.0' }
-
+  s.dependency 'SnapKit'
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.11'
   s.tvos.deployment_target = '9.0'
