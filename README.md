@@ -6,7 +6,7 @@
 
 ## 录屏
 
-<img src="screenshots.gif" width="25%">
+<img src="screenshots.gif">
 
 # 功能
 - [x] 加载框动画show和dismiss
