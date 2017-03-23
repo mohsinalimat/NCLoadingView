@@ -4,6 +4,10 @@
 - [x] 最低支持iOS8
 - [x] 使用swift3编写
 
+## 录屏
+
+<img src="screenshots.gif" width="25%">
+
 # 功能
 - [x] 加载框动画show和dismiss
 - [x] 支持屏幕旋转后依然处于视图中心
