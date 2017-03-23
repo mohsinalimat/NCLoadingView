@@ -16,7 +16,7 @@ class NCLoadingAnimatedView: UIView {
     var foregroundLayer:CAShapeLayer = {
         let layer = CAShapeLayer()
         layer.lineWidth = 2.0
-        layer.strokeColor = UIColor.red.cgColor
+        layer.strokeColor = NCLoadingView.tintColor.cgColor
         layer.fillColor = nil
         layer.lineCap = kCALineCapButt
         layer.strokeEnd = 0.15;
@@ -36,11 +36,20 @@ class NCLoadingAnimatedView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clear
+        self.foregroundLayer.position = self.center
+        self.backgroundLayer.position = self.center
+        
+        self.foregroundLayer.frame = bounds
+        self.backgroundLayer.frame = bounds
+        
         self.maskLayer.frame = bounds
         self.maskLayer.mask = self.backgroundLayer
+        
         let path:UIBezierPath = UIBezierPath(ovalIn: bounds.insetBy(dx: 2, dy: 2))
+        
         self.foregroundLayer.path = path.cgPath
         self.backgroundLayer.path = path.cgPath
+        
         self.layer.addSublayer(self.backgroundLayer)
         self.layer.addSublayer(self.foregroundLayer)
         self.rotate()
@@ -63,10 +72,9 @@ class NCLoadingAnimatedView: UIView {
         animation.repeatCount = Float(Int.max)
         animation.autoreverses = false
         animation.isRemovedOnCompletion = false
+        animation.fillMode = kCAFillModeForwards
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-        self.layer.add(animation, forKey: "animation")
-        //self.foregroundLayer.add(animation, forKey: "animation")
-        //self.backgroundLayer.add(animation, forKey: "animation")
+        self.foregroundLayer.add(animation, forKey: "animation")
     }
 
 }

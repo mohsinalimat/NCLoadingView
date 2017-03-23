@@ -19,6 +19,10 @@ class NCLoadingView: UIView {
     static let sharedInstance:NCLoadingView? = NCLoadingView(frame: CGRect(x: 0, y: 0, width: kWith, height: kHeight))
     ///全局常量
     static let  window:UIWindow? = UIApplication.shared.delegate?.window!
+    ///配置加载框颜色
+    static var tintColor: UIColor! = UIColor.red
+    ///配置提示文本颜色
+    static var textColor: UIColor! = UIColor(red: 120.0/255.0, green: 120.0/255.0, blue: 120.0/255.0, alpha: 1.0)
     ///成员变量
     var cornerRadius: Float? = 5.0
     var delay: TimeInterval? = 0.2
@@ -33,7 +37,7 @@ class NCLoadingView: UIView {
     var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = UIColor(red: 120.0/255.0, green: 120.0/255.0, blue: 120.0/255.0, alpha: 1.0)
+        label.textColor = NCLoadingView.textColor
         label.numberOfLines = 0
         label.textAlignment = NSTextAlignment.left
         return label
