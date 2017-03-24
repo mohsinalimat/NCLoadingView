@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-fileprivate let kTitle: String = "加载中"
+fileprivate let kTitle: String = "加载中..."
 fileprivate let kWith: Int = 140
 fileprivate let kHeight: Int = 61
 fileprivate let kLoadViewSize: Int = 29
@@ -86,17 +86,17 @@ class NCLoadingView: UIView {
         }
     }
     //MARK: - show
-    static func show() -> Void {
+    public static func show() -> Void {
         self.show(in: window!, with: kTitle)
     }
-    static func show(in view:UIView) -> Void {
+    public static func show(in view:UIView) -> Void {
         self.show(in: view, with: kTitle)
     }
-    static func show(with text:String) -> Void {
+    public static func show(with text:String) -> Void {
         self.show(in: window! , with: text)
     }
 
-    static func show(in view:UIView ,with text:String) -> Void {
+    public static func show(in view:UIView ,with text:String) -> Void {
         if let loadView = self.sharedInstance{
             loadView.titleLabel.text = text
             DispatchQueue.main.async(execute: { 
@@ -111,10 +111,10 @@ class NCLoadingView: UIView {
         }
     }
     //MARK: - dismiss
-    static func dismiss() -> Void {
+    public static func dismiss() -> Void {
         self.dismiss(delay: self.sharedInstance!.delay!)
     }
-    static func dismiss(delay:TimeInterval) -> Void {
+    public static func dismiss(delay:TimeInterval) -> Void {
         ///延迟执行动画
         if let loadView = self.sharedInstance{
             DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: {
