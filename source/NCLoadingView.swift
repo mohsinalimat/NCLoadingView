@@ -20,9 +20,9 @@ public class NCLoadingView: UIView {
     ///全局常量
     static let  window:UIWindow? = UIApplication.shared.delegate?.window!
     ///配置加载框颜色
-    static var tintColor: UIColor! = UIColor.red
+    public static var tintColor: UIColor! = UIColor.red
     ///配置提示文本颜色
-    static var textColor: UIColor! = UIColor(red: 120.0/255.0, green: 120.0/255.0, blue: 120.0/255.0, alpha: 1.0)
+    public static var textColor: UIColor! = UIColor(red: 120.0/255.0, green: 120.0/255.0, blue: 120.0/255.0, alpha: 1.0)
     ///成员变量
     var cornerRadius: Float? = 5.0
     var delay: TimeInterval? = 0.2
@@ -86,17 +86,17 @@ public class NCLoadingView: UIView {
         }
     }
     //MARK: - show
-    static func show() -> Void {
+    public static func show() -> Void {
         self.show(in: window!, with: kTitle)
     }
-    static func show(in view:UIView) -> Void {
+    public static func show(in view:UIView) -> Void {
         self.show(in: view, with: kTitle)
     }
-    static func show(with text:String) -> Void {
+    public static func show(with text:String) -> Void {
         self.show(in: window! , with: text)
     }
 
-    static func show(in view:UIView ,with text:String) -> Void {
+    public static func show(in view:UIView ,with text:String) -> Void {
         if let loadView = self.sharedInstance{
             loadView.titleLabel.text = text
             DispatchQueue.main.async(execute: { 
@@ -111,10 +111,10 @@ public class NCLoadingView: UIView {
         }
     }
     //MARK: - dismiss
-    static func dismiss() -> Void {
+    public static func dismiss() -> Void {
         self.dismiss(delay: self.sharedInstance!.delay!)
     }
-    static func dismiss(delay:TimeInterval) -> Void {
+    public static func dismiss(delay:TimeInterval) -> Void {
         ///延迟执行动画
         if let loadView = self.sharedInstance{
             DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: {
