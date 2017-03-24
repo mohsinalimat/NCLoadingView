@@ -14,7 +14,7 @@ fileprivate let kWith: Int = 140
 fileprivate let kHeight: Int = 61
 fileprivate let kLoadViewSize: Int = 29
 
-class NCLoadingView: UIView {
+public class NCLoadingView: UIView {
     ///单例
     static let sharedInstance:NCLoadingView? = NCLoadingView(frame: CGRect(x: 0, y: 0, width: kWith, height: kHeight))
     ///全局常量
@@ -60,7 +60,7 @@ class NCLoadingView: UIView {
         ///布局
         self.setup()
     }
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     ///通知处理函数
@@ -86,17 +86,17 @@ class NCLoadingView: UIView {
         }
     }
     //MARK: - show
-    public static func show() -> Void {
+    static func show() -> Void {
         self.show(in: window!, with: kTitle)
     }
-    public static func show(in view:UIView) -> Void {
+    static func show(in view:UIView) -> Void {
         self.show(in: view, with: kTitle)
     }
-    public static func show(with text:String) -> Void {
+    static func show(with text:String) -> Void {
         self.show(in: window! , with: text)
     }
 
-    public static func show(in view:UIView ,with text:String) -> Void {
+    static func show(in view:UIView ,with text:String) -> Void {
         if let loadView = self.sharedInstance{
             loadView.titleLabel.text = text
             DispatchQueue.main.async(execute: { 
@@ -111,10 +111,10 @@ class NCLoadingView: UIView {
         }
     }
     //MARK: - dismiss
-    public static func dismiss() -> Void {
+    static func dismiss() -> Void {
         self.dismiss(delay: self.sharedInstance!.delay!)
     }
-    public static func dismiss(delay:TimeInterval) -> Void {
+    static func dismiss(delay:TimeInterval) -> Void {
         ///延迟执行动画
         if let loadView = self.sharedInstance{
             DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: {
